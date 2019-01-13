@@ -1,18 +1,9 @@
-
-#container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  
-}
-
 div {
    height: 50px;
   flex-basis: 6%;
-  
- 
+   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   padding: 10px;
   box-sizing: border-box;
-  
-
 }

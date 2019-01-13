@@ -1,17 +1,16 @@
-
 const container = document.querySelector('#container');
+const btn = document.querySelector('#button');
 
 
-function createSixteenElements(){
 for (var i=0;i<256;i++) {
-  let div = document.createElement('div');
-  div.textContent = 'div';
+  const div = document.createElement('div');
   container.appendChild(div);
-  }
+  div.textContent = 'div';
+
+  div.addEventListener('mouseover', (e) => {
+    e.target.style.background = 'blue';
+  });
+  button.addEventListener('click', (e) => {
+      div.style.background = 'initial';
+    });
 }
-
-createSixteenElements();
-
-div.addEventListener('mouseover', (e) => {
-  e.target.style.background = 'blue'
-});
